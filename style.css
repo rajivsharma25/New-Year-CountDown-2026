@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(120deg, #561530, #2c0d1a);
+  color: #313647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background: #8a2d4c; 
+  color: #f7f1de;       
+}
+
+
+.container {
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f7f1de, #e8dbc1);
+}
+
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#countdown div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  width: 100px;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+  background: linear-gradient(135deg, #6a1b36, #3a0d1d);
+  color: #f7f1de;
+  border-radius: 10px;
+}
+
+
+
+.timer-details {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.progress-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.progress-container {
+  background-color: #3a0d1d;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+#progress-bar {
+  background-color: #8a2d4c;
+  border-radius: 5px;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
